@@ -2,7 +2,7 @@
 
 > What is the Vtiger Customizer?
 
-The Vtiger Customizer is a technique to extends Vtiger Core functions and methods without change core files but just define new functions and bind or connect the new function to the original one.
+The Vtiger Customizer is a technique to extends Vtiger Core functions and methods without change core files but just define new functions and bind or connect it (the new function) to the original one.
 
 > Did you explain it with an example?
 
