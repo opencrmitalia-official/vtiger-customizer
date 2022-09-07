@@ -24,4 +24,21 @@ Vtiger_Customizer::extendMethod('Users::doLogin', function($self, $args) {
 
   return $success;
 });
+```
+
+## Customize the every "Email Bodu"
+
+Into Vtiger all email sent pass from this function 'send_mail' placed here <https://code.vtiger.com/vtiger/vtigercrm/blob/master/modules/Emails/mail.php>.
+
+Now I need to append to all emails I send the message "This email is property of VTIGER do not touch please!"
+
+```php
+<?php
+Vtiger_Customizer::extendFunctions('send_mail', function($args) {
+
+  $args['contents'] .= "\n\n" . "This email is property of VTIGER do not touch please!"; 
+  
+  return send_mail($args);
+});
+
 
