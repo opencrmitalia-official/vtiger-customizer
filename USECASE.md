@@ -26,7 +26,7 @@ Vtiger_Customizer::extendMethod('Users::doLogin', function($self, $args) {
 });
 ```
 
-## Customize the every "Email Bodu"
+## Customize the every "Emails Body"
 
 Into Vtiger all email sent pass from this function 'send_mail' placed here <https://code.vtiger.com/vtiger/vtigercrm/blob/master/modules/Emails/mail.php>.
 
