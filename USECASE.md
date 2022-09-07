@@ -15,8 +15,7 @@ Vtiger_Customizer::extendMethod('Users::doLogin', function($self, $args) {
   // Do the standard 'doLogin' methods
   $success = $self->doLogin($args['password']);
 
-  // If user exists on DB and login is correct, now I check if exists on public list of Footbal Arbiters
-  // With this if an Ar
+  // If user exists on DB and login is correct, now I check if exists on public list of Footbal Arbiters 
   if ($success) {
     $listOfArbiters = json_decode(file_get_contents('<public-url-of-footbal-data>'), true);
     
